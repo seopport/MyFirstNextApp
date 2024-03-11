@@ -8,16 +8,17 @@ const CSR = () => {
 
   useEffect(() => {
     const fetchCatFact = async () => {
-      const response = await fetch('https://catfact.ninja/fact', {
-        // 캐시처리 안하겠다 = 계속 새로운 데이터를 불러오겠다.
-        cache: 'no-cache',
-      });
+      const response = await fetch('https://catfact.ninja/fact');
       const result = await response.json();
       setCatFact(result);
     };
 
     fetchCatFact();
   }, []);
+
+  if (!catFact) {
+    return <div>로딩중...</div>;
+  }
 
   return (
     <div>
