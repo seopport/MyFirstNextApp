@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const renderingLayout = ({ children }: { children: React.ReactNode }) => {
-  return <div>🤓 Next.js의 렌더링 기법을 이해해봅시다. 👽{children}</div>;
+  return <div>{children}</div>;
 };
 
 export default renderingLayout;

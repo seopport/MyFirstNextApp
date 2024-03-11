@@ -79,6 +79,9 @@ export default function RootLayout({
           >
             @seopport <span aria-hidden='true'></span>
           </Link>
+        </div>{' '}
+        <div className='flex flex-col justify-center items-center text-2xl font-light'>
+          🤓 Next.js의 렌더링 기법을 이해해봅시다. 👽
         </div>
         {children}
       </body>

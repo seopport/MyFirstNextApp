@@ -3,9 +3,6 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main>
-      <div className='flex flex-col justify-center items-center text-2xl font-light'>
-        🤓 Next.js의 렌더링 기법을 이해해봅시다. 👽
-      </div>
       <div className='flex min-h-screen flex-row items-center justify-center p-24 gap-x-10 '>
         <div>
           CSR
